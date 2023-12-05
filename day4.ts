@@ -15,12 +15,6 @@ function parseLine(line: string): Card {
 
   return card;
 }
-function parseNumbers(line: string): any {
-  return line.match(/\d+/g).reduce((acc, val) => {
-    acc[val] = true;
-    return acc;
-  }, []);
-}
 
 let points = 0;
 for (let line of input) {
