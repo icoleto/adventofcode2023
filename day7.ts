@@ -76,7 +76,7 @@ function calculateCamelCardsType(hand: Hand) {
     return;
   }
 
-  if (sortRepeated[0].repeated === 3 && sortRepeated[1] === 2) {
+  if (sortRepeated[0].repeated === 3 && sortRepeated[1].repeated === 2) {
     hand.type = CamelCardsType.FullHouse;
     return;
   }
